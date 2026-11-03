@@ -1,0 +1,36 @@
+{
+  "2022_high_pre_ends_2019": {
+    "T_pre": 68,
+    "reference_tau": 0.006905740811235598,
+    "project_tau_recomputed": 0.007063804266777545,
+    "project_tau_saved": 0.007064,
+    "unit_weight_correlation": 0.999089931224966,
+    "unit_weight_max_abs_difference": 0.0036380181880201986,
+    "time_weight_max_abs_difference": 6.323986845302443e-07,
+    "time_weights_reference": {
+      "2019.75": 1.0
+    },
+    "time_weights_project": {
+      "2019.75": 1.0
+    },
+    "weights_valid": true
+  },
+  "2022_high": {
+    "T_pre": 70,
+    "reference_tau": -0.038971154968017084,
+    "project_tau_recomputed": -0.038806036123828026,
+    "project_tau_saved": -0.038806,
+    "unit_weight_correlation": 0.9994079572726641,
+    "unit_weight_max_abs_difference": 0.002881876857079661,
+    "time_weight_max_abs_difference": 2.3622107381271462e-08,
+    "time_weights_reference": {
+      "2019.75": 0.188,
+      "2021.75": 0.812
+    },
+    "time_weights_project": {
+      "2019.75": 0.188,
+      "2021.75": 0.812
+    },
+    "weights_valid": true
+  }
+}

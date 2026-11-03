@@ -1,0 +1,424 @@
+{
+  "spec": "docs/PREREGISTRATION.md, Test A",
+  "ramp_injection": {
+    "reps": 200,
+    "ramp": "linear from 2023.0 to 2026.5",
+    "planted_share_of_endpoint": 0.666667,
+    "rows": [
+      {
+        "size_at_2026Q3": 0.0,
+        "planted_delta": -0.0,
+        "mean_estimate": -5.2e-05,
+        "bias": -5.2e-05,
+        "null_sd": 0.018805,
+        "power_empirical_null": 0.035,
+        "power_cluster_test": 0.04
+      },
+      {
+        "size_at_2026Q3": 0.025,
+        "planted_delta": -0.016667,
+        "mean_estimate": -0.016719,
+        "bias": -5.2e-05,
+        "null_sd": 0.018805,
+        "power_empirical_null": 0.145,
+        "power_cluster_test": 0.115
+      },
+      {
+        "size_at_2026Q3": 0.05,
+        "planted_delta": -0.033333,
+        "mean_estimate": -0.033385,
+        "bias": -5.2e-05,
+        "null_sd": 0.018805,
+        "power_empirical_null": 0.45,
+        "power_cluster_test": 0.395
+      },
+      {
+        "size_at_2026Q3": 0.1,
+        "planted_delta": -0.066667,
+        "mean_estimate": -0.066719,
+        "bias": -5.2e-05,
+        "null_sd": 0.018805,
+        "power_empirical_null": 0.94,
+        "power_cluster_test": 0.93
+      },
+      {
+        "size_at_2026Q3": 0.15,
+        "planted_delta": -0.1,
+        "mean_estimate": -0.100052,
+        "bias": -5.2e-05,
+        "null_sd": 0.018805,
+        "power_empirical_null": 1.0,
+        "power_cluster_test": 0.995
+      }
+    ],
+    "mde_80pct_analytic": 0.078979,
+    "smallest_tested_size_with_80pct_power": 0.1
+  },
+  "primary": {
+    "n_quarters": 41,
+    "n_industries": 94,
+    "quartile_gap_sd": 2.522568,
+    "delta_per_sd": {
+      "est": -0.01965,
+      "se": 0.008057,
+      "ci95": [
+        -0.035651,
+        -0.00365
+      ],
+      "p": 0.016637
+    },
+    "delta_top_vs_bottom_quartile": {
+      "est": -0.049569,
+      "se": 0.020325,
+      "ci95": [
+        -0.089931,
+        -0.009206
+      ],
+      "p": 0.016637
+    },
+    "prob_below_zero": 0.992631,
+    "prob_below_zero_skeptical": 0.970772,
+    "theta_base_year": 0.030217,
+    "theta_post_mean": 0.010567,
+    "pretrend": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "F": 2.21971,
+      "p": 0.072788
+    },
+    "path": {
+      "2015": {
+        "theta": -0.009141,
+        "se": 0.011019
+      },
+      "2016": {
+        "theta": -0.001368,
+        "se": 0.007388
+      },
+      "2017": {
+        "theta": -0.0013,
+        "se": 0.004619
+      },
+      "2018": {
+        "theta": -0.002553,
+        "se": 0.002483
+      },
+      "2019": {
+        "theta": 0.0,
+        "se": 0.0
+      },
+      "2021": {
+        "theta": 0.030094,
+        "se": 0.009677
+      },
+      "2022": {
+        "theta": 0.030217,
+        "se": 0.010554
+      },
+      "2023": {
+        "theta": 0.023711,
+        "se": 0.012071
+      },
+      "2024": {
+        "theta": 0.014673,
+        "se": 0.014149
+      },
+      "2025": {
+        "theta": 0.009941,
+        "se": 0.016222
+      },
+      "2026": {
+        "theta": 0.007087,
+        "se": 0.017231
+      }
+    },
+    "wild_bootstrap_p": 0.016016,
+    "randomization_p": 0.01
+  },
+  "exploratory_trend_adjusted": {
+    "delta_top_vs_bottom_quartile": {
+      "est": -0.061128,
+      "se": 0.01722,
+      "ci95": [
+        -0.095323,
+        -0.026933
+      ],
+      "p": 0.000607
+    },
+    "prob_below_zero": 0.999807
+  },
+  "boom_controlled": {
+    "n_quarters": 41,
+    "n_industries": 94,
+    "quartile_gap_sd": 2.522568,
+    "delta_per_sd": {
+      "est": -0.011567,
+      "se": 0.008284,
+      "ci95": [
+        -0.028018,
+        0.004884
+      ],
+      "p": 0.165967
+    },
+    "delta_top_vs_bottom_quartile": {
+      "est": -0.029179,
+      "se": 0.020898,
+      "ci95": [
+        -0.070678,
+        0.012321
+      ],
+      "p": 0.165967
+    },
+    "prob_below_zero": 0.918678,
+    "prob_below_zero_skeptical": 0.857972,
+    "theta_base_year": 0.010532,
+    "theta_post_mean": -0.001035,
+    "pretrend": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "F": 1.296705,
+      "p": 0.277082
+    },
+    "path": {
+      "2015": {
+        "theta": -0.012559,
+        "se": 0.013362
+      },
+      "2016": {
+        "theta": -0.005701,
+        "se": 0.00897
+      },
+      "2017": {
+        "theta": -0.001942,
+        "se": 0.005545
+      },
+      "2018": {
+        "theta": -0.002172,
+        "se": 0.002928
+      },
+      "2019": {
+        "theta": 0.0,
+        "se": 0.0
+      },
+      "2021": {
+        "theta": 0.007363,
+        "se": 0.010374
+      },
+      "2022": {
+        "theta": 0.010532,
+        "se": 0.01019
+      },
+      "2023": {
+        "theta": 0.007858,
+        "se": 0.011055
+      },
+      "2024": {
+        "theta": 0.001241,
+        "se": 0.013807
+      },
+      "2025": {
+        "theta": -0.001058,
+        "se": 0.016266
+      },
+      "2026": {
+        "theta": -0.003288,
+        "se": 0.017689
+      }
+    }
+  },
+  "dotcom": {
+    "n_quarters": 32,
+    "n_industries": 99,
+    "quartile_gap_sd": 2.543009,
+    "delta_per_sd": {
+      "est": -0.015228,
+      "se": 0.005449,
+      "ci95": [
+        -0.026041,
+        -0.004415
+      ],
+      "p": 0.006248
+    },
+    "delta_top_vs_bottom_quartile": {
+      "est": -0.038726,
+      "se": 0.013856,
+      "ci95": [
+        -0.066223,
+        -0.011229
+      ],
+      "p": 0.006248
+    },
+    "prob_below_zero": 0.997404,
+    "prob_below_zero_skeptical": 0.992747,
+    "theta_base_year": 0.03408,
+    "theta_post_mean": 0.018852,
+    "pretrend": {
+      "years": [
+        1996,
+        1997
+      ],
+      "F": 8.412234,
+      "p": 0.000425
+    },
+    "path": {
+      "1996": {
+        "theta": -0.027287,
+        "se": 0.006676
+      },
+      "1997": {
+        "theta": -0.014852,
+        "se": 0.003733
+      },
+      "1998": {
+        "theta": 0.0,
+        "se": 0.0
+      },
+      "1999": {
+        "theta": 0.01492,
+        "se": 0.005626
+      },
+      "2000": {
+        "theta": 0.029508,
+        "se": 0.010228
+      },
+      "2001": {
+        "theta": 0.03408,
+        "se": 0.011735
+      },
+      "2002": {
+        "theta": 0.022651,
+        "se": 0.012759
+      },
+      "2003": {
+        "theta": 0.015052,
+        "se": 0.015321
+      }
+    }
+  },
+  "primary_minus_dotcom_quartile": -0.010843,
+  "fake_2017": {
+    "n_quarters": 40,
+    "n_industries": 95,
+    "quartile_gap_sd": 2.532154,
+    "delta_per_sd": {
+      "est": -0.0005,
+      "se": 0.004158,
+      "ci95": [
+        -0.008756,
+        0.007757
+      ],
+      "p": 0.90464
+    },
+    "delta_top_vs_bottom_quartile": {
+      "est": -0.001265,
+      "se": 0.01053,
+      "ci95": [
+        -0.022172,
+        0.019642
+      ],
+      "p": 0.90464
+    },
+    "prob_below_zero": 0.547808,
+    "prob_below_zero_skeptical": 0.544076,
+    "theta_base_year": 0.008011,
+    "theta_post_mean": 0.007511,
+    "pretrend": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "F": 0.730234,
+      "p": 0.573535
+    },
+    "path": {
+      "2010": {
+        "theta": -0.002245,
+        "se": 0.014301
+      },
+      "2011": {
+        "theta": -0.003857,
+        "se": 0.012574
+      },
+      "2012": {
+        "theta": -0.00417,
+        "se": 0.01003
+      },
+      "2013": {
+        "theta": -0.001686,
+        "se": 0.006971
+      },
+      "2014": {
+        "theta": -0.002073,
+        "se": 0.004044
+      },
+      "2015": {
+        "theta": 0.0,
+        "se": 0.0
+      },
+      "2016": {
+        "theta": 0.008011,
+        "se": 0.005494
+      },
+      "2017": {
+        "theta": 0.008257,
+        "se": 0.00714
+      },
+      "2018": {
+        "theta": 0.006766,
+        "se": 0.008852
+      },
+      "2019": {
+        "theta": 0.009125,
+        "se": 0.010921
+      }
+    }
+  },
+  "quintiles_delta_vs_Q1": {
+    "Q2": {
+      "est": 0.017097,
+      "se": 0.023217,
+      "ci95": [
+        -0.029008,
+        0.063202
+      ],
+      "p": 0.46335
+    },
+    "Q3": {
+      "est": 0.004057,
+      "se": 0.023264,
+      "ci95": [
+        -0.04214,
+        0.050254
+      ],
+      "p": 0.861925
+    },
+    "Q4": {
+      "est": -0.040064,
+      "se": 0.026105,
+      "ci95": [
+        -0.091903,
+        0.011775
+      ],
+      "p": 0.128243
+    },
+    "Q5": {
+      "est": -0.03869,
+      "se": 0.024396,
+      "ci95": [
+        -0.087135,
+        0.009755
+      ],
+      "p": 0.116147
+    }
+  }
+}

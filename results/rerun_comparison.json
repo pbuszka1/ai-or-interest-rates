@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-03",
+  "rerun_commit": "a8a863c",
+  "tolerance": 1e-09,
+  "files": 15,
+  "numbers_compared": 6861,
+  "numbers_differing": 0,
+  "by_file": {
+    "data_validation.json": {
+      "numbers": 37,
+      "differ": 0,
+      "examples": []
+    },
+    "event_study_industry.json": {
+      "numbers": 238,
+      "differ": 0,
+      "examples": []
+    },
+    "event_study_occupation.json": {
+      "numbers": 347,
+      "differ": 0,
+      "examples": []
+    },
+    "injection_test.json": {
+      "numbers": 134,
+      "differ": 0,
+      "examples": []
+    },
+    "population_controls_check.json": {
+      "numbers": 35,
+      "differ": 0,
+      "examples": []
+    },
+    "review_robustness.json": {
+      "numbers": 141,
+      "differ": 0,
+      "examples": []
+    },
+    "sdid_industry.json": {
+      "numbers": 895,
+      "differ": 0,
+      "examples": []
+    },
+    "sdid_occupation.json": {
+      "numbers": 3421,
+      "differ": 0,
+      "examples": []
+    },
+    "sdid_qwi.json": {
+      "numbers": 1127,
+      "differ": 0,
+      "examples": []
+    },
+    "synth_computer.json": {
+      "numbers": 37,
+      "differ": 0,
+      "examples": []
+    },
+    "synth_industry.json": {
+      "numbers": 90,
+      "differ": 0,
+      "examples": []
+    },
+    "synth_variants.json": {
+      "numbers": 60,
+      "differ": 0,
+      "examples": []
+    },
+    "test_b_filter_check.json": {
+      "numbers": 38,
+      "differ": 0,
+      "examples": []
+    },
+    "verification_checks.json": {
+      "numbers": 127,
+      "differ": 0,
+      "examples": []
+    },
+    "young_worker_robustness.json": {
+      "numbers": 134,
+      "differ": 0,
+      "examples": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "X_2022": {
+    "wildboottest_p": 0.0079007900790079,
+    "project_p": 0.0053005300530053,
+    "project_cluster_p": 0.005183039328053978,
+    "wildboottest_t": 2.8631529218926506,
+    "coefficient_project": 0.030217238103065237,
+    "coefficient_pyfixest": 0.030217238103065144
+  },
+  "X_2024": {
+    "wildboottest_p": 0.3142314231423142,
+    "project_p": 0.31153115311531154,
+    "project_cluster_p": 0.30240775170790524,
+    "wildboottest_t": 1.0370364871855229,
+    "coefficient_project": 0.01467334052826519,
+    "coefficient_pyfixest": 0.0146733405282651
+  },
+  "X_2026": {
+    "wildboottest_p": 0.6870687068706871,
+    "project_p": 0.6868686868686869,
+    "project_cluster_p": 0.6818084474379258,
+    "wildboottest_t": 0.4112868641409844,
+    "coefficient_project": 0.007086804503038996,
+    "coefficient_pyfixest": 0.007086804503038932
+  },
+  "X_2016": {
+    "wildboottest_p": 0.8657865786578658,
+    "project_p": 0.8544854485448545,
+    "project_cluster_p": 0.8535008608976815,
+    "wildboottest_t": -0.1851675348871118,
+    "coefficient_project": -0.0013681048336218451,
+    "coefficient_pyfixest": -0.0013681048336219397
+  }
+}

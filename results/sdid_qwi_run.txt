@@ -1,0 +1,34 @@
+treated: ['Computing infrastructure, data processing and web hosting', 'Depository credit intermediation', 'Other financial investment activities', 'Insurance carriers', 'Legal services', 'Accounting, tax preparation, bookkeeping and payroll', 'Computer systems design and related services', 'Management, scientific and technical consulting', 'Scientific research and development services', 'Advertising, public relations and related services']
+controls: ['Residential building construction', 'Building equipment contractors', 'Motor vehicle manufacturing', 'Motor vehicle parts manufacturing', 'Automobile dealers', 'Building material and supplies dealers', 'Employment services', 'Services to buildings and dwellings', 'General medical and surgical hospitals', 'Nursing care facilities', 'Automotive repair and maintenance']
+
+primary_2019_baseline (45 states):
+  gap   tau -0.0926 se 0.0461 ci [-0.18286, -0.002282] units 40/43 pre-rms 0.04467 by year {2022: -0.102418, 2023: -0.08612, 2024: -0.088833, 2025: -0.092913}
+        time weights {'2004.75': 0.094, '2006.00': 0.025, '2018.50': 0.105, '2019.50': 0.276, '2019.75': 0.5}
+  young tau +0.0344 se 0.0691 ci [-0.101147, 0.16991] units 40/43 pre-rms 0.07718 by year {2022: 0.115096, 2023: -0.013292, 2024: 0.00848, 2025: 0.027243}
+        time weights {'2018.00': 0.106, '2018.50': 0.354, '2019.75': 0.54}
+  mid   tau +0.1024 se 0.0653 ci [-0.025603, 0.23038] units 40/43 pre-rms 0.075841 by year {2022: 0.187259, 2023: 0.039031, 2024: 0.080874, 2025: 0.102389}
+        time weights {'2017.25': 0.439, '2018.25': 0.058, '2018.50': 0.407, '2019.75': 0.087}
+
+secondary_late2021_baseline (45 states):
+  gap   tau +0.0006 se 0.0276 ci [-0.053484, 0.054775] units 40/43 pre-rms 0.113845 by year {2022: -0.010185, 2023: 0.007116, 2024: 0.004754, 2025: 0.000898}
+        time weights {'2006.00': 0.031, '2021.50': 0.515, '2021.75': 0.455}
+  young tau -0.0734 se 0.0543 ci [-0.179836, 0.03295] units 40/43 pre-rms 0.087497 by year {2022: 0.00522, 2023: -0.122062, 2024: -0.098259, 2025: -0.078673}
+        time weights {'2019.75': 0.29, '2021.50': 0.701}
+  mid   tau -0.0637 se 0.0444 ci [-0.150703, 0.023239] units 40/43 pre-rms 0.144706 by year {2022: 0.013533, 2023: -0.129138, 2024: -0.081069, 2025: -0.058253}
+        time weights {'2009.00': 0.068, '2009.75': 0.05, '2017.25': 0.164, '2021.50': 0.717}
+
+dotcom (20 states):
+  gap   tau -0.0291 se 0.0347 ci [-0.097085, 0.038837] units 39/43 pre-rms 0.051464 by year {2001: -0.019531, 2002: -0.04077, 2003: -0.027071}
+        time weights {'1999.25': 0.113, '2000.00': 0.124, '2000.50': 0.327, '2000.75': 0.435}
+  young tau -0.1010 se 0.0741 ci [-0.246184, 0.04424] units 39/43 pre-rms 0.090546 by year {2001: -0.070635, 2002: -0.128663, 2003: -0.103619}
+        time weights {'1998.00': 0.033, '1999.00': 0.21, '2000.50': 0.193, '2000.75': 0.564}
+  mid   tau -0.0886 se 0.0527 ci [-0.191888, 0.014648] units 39/43 pre-rms 0.057687 by year {2001: -0.066131, 2002: -0.103733, 2003: -0.095995}
+        time weights {'1998.00': 0.276, '1999.00': 0.112, '1999.75': 0.044, '2000.50': 0.411, '2000.75': 0.156}
+
+exploratory_pandemic_kept (45 states):
+  gap   tau -0.0884 se 0.0352 ci [-0.157515, -0.019383] units 40/43 pre-rms 0.045818 by year {2020: -0.059089, 2021: -0.09741, 2022: -0.103945, 2023: -0.0874, 2024: -0.089613, 2025: -0.093237}
+        time weights {'2004.75': 0.103, '2018.50': 0.149, '2019.50': 0.258, '2019.75': 0.48}
+  young tau +0.0609 se 0.0587 ci [-0.054227, 0.175935] units 40/43 pre-rms 0.099251 by year {2020: -0.024292, 2021: 0.130068, 2022: 0.142936, 2023: 0.015991, 2024: 0.04027, 2025: 0.06015}
+        time weights {'2018.00': 0.446, '2018.50': 0.077, '2019.75': 0.477}
+  mid   tau +0.1097 se 0.0539 ci [0.003958, 0.215356] units 40/43 pre-rms 0.081499 by year {2020: 0.012862, 2021: 0.189989, 2022: 0.19656, 2023: 0.050345, 2024: 0.093215, 2025: 0.114969}
+        time weights {'2017.25': 0.261, '2018.00': 0.313, '2018.25': 0.043, '2018.50': 0.257, '2019.75': 0.126}

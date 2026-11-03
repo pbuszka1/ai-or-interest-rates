@@ -1,0 +1,74 @@
+{
+  "note": "Our CPS extract covers ages 18 to 65.",
+  "cps_by_age_vs_bls": {
+    "25-54": {
+      "series": "LNU02000060",
+      "months": 200,
+      "median_abs_gap_pct": 0.1291540975116523,
+      "max_abs_gap_pct": 0.6799230531490119
+    },
+    "20-24": {
+      "series": "LNU02000036",
+      "months": 200,
+      "median_abs_gap_pct": 0.48083143291770547,
+      "max_abs_gap_pct": 2.1038531987528364
+    }
+  },
+  "occupation_change_2019_25_vs_bls_table_11": {
+    "Software developers": {
+      "ours_change_pct": 29.152774810791016,
+      "bls_change_pct": 24.18732782369146
+    },
+    "Registered nurses": {
+      "ours_change_pct": 8.476471900939941,
+      "bls_change_pct": 8.821714990746443
+    },
+    "Accountants and auditors": {
+      "ours_change_pct": -10.376191139221191,
+      "bls_change_pct": -10.081466395112015
+    },
+    "Lawyers": {
+      "ours_change_pct": -8.138924598693848,
+      "bls_change_pct": -7.580645161290322
+    },
+    "Cashiers": {
+      "ours_change_pct": -24.023670196533203,
+      "bls_change_pct": -21.30214917825537
+    },
+    "Construction laborers": {
+      "ours_change_pct": 14.842641830444336,
+      "bls_change_pct": 16.138469039492918
+    },
+    "Customer service representatives": {
+      "ours_change_pct": 0.20720958709716797,
+      "bls_change_pct": 1.8808777429467183
+    },
+    "Computer and mathematical (SOC 15)": {
+      "ours_change_pct": 25.315879821777344,
+      "bls_change_pct": 25.39237668161436
+    },
+    "Management (SOC 11)": {
+      "ours_change_pct": 16.989755630493164,
+      "bls_change_pct": 9.960495127732427
+    }
+  },
+  "occupation_group_shares": {
+    "sd_log_change_2017_19": 0.047970239888027,
+    "sd_log_change_2019_21": 0.09563614431867841,
+    "correlation_with_exposure_2019_21": 0.04253761197755761,
+    "largest_moves_2019_21": {
+      "13-11": 0.2501928125247983,
+      "43-50": 0.2400453029947222,
+      "25-10": -0.22760805003740542,
+      "25-90": 0.20886153343033714,
+      "35-90": -0.2016083474394532,
+      "39-90": -0.16380806752093327
+    }
+  },
+  "ces_test_a_share_of_total_private_pct": {
+    "2015": 86.7291308940723,
+    "2019": 86.64690423119139,
+    "2022": 86.37064835923279,
+    "2026": 85.47505860236915
+  }
+}

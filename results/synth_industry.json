@@ -1,0 +1,204 @@
+{
+  "treated": "Computer Systems Design and Related Services",
+  "n_donors": 43,
+  "donors": [
+    "Logging",
+    "Coal Mining",
+    "Support Activities for Mining",
+    "Residential Building Construction",
+    "Nonresidential Building Construction",
+    "Heavy and Civil Engineering Construction",
+    "Specialty Trade Contractors",
+    "Wood Product Manufacturing",
+    "Nonmetallic Mineral Product Manufacturing",
+    "Primary Metal Manufacturing",
+    "Fabricated Metal Product Manufacturing",
+    "Machinery Manufacturing",
+    "Electrical Equipment, Appliance, and Component Manufacturing",
+    "Motor Vehicles and Parts",
+    "Ship and Boat Building",
+    "Furniture and Related Product Manufacturing",
+    "Food Manufacturing",
+    "Textile Mills",
+    "Textile Product Mills",
+    "Apparel Manufacturing",
+    "Paper Manufacturing",
+    "Petroleum and Coal Products Manufacturing",
+    "Plastics and Rubber Products Manufacturing",
+    "Beverage, Tobacco, and Leather and Allied Product Manufacturing",
+    "Automobile Dealers",
+    "Food and Beverage Retailers",
+    "Rail Transportation",
+    "Water Transportation",
+    "Truck Transportation",
+    "Transit and Ground Passenger Transportation",
+    "Pipeline Transportation",
+    "Support Activities for Transportation",
+    "Couriers and Messengers",
+    "Warehousing and Storage",
+    "Services to Buildings and Dwellings",
+    "Waste Management and Remediation Services",
+    "Home Health Care Services",
+    "Skilled Nursing Care Facilities",
+    "Amusement, Gambling, and Recreation Industries",
+    "Accommodation",
+    "Food Services and Drinking Places",
+    "Repair and Maintenance",
+    "Personal and Laundry Services"
+  ],
+  "pandemic_excluded_from_fit": [
+    2020.0,
+    2021.25
+  ],
+  "holdout": {
+    "rmspe_fit_2003_17": 0.0182,
+    "rmspe_2018_19": 0.0486,
+    "ratio": 2.66,
+    "donor_ratio_median": 1.94,
+    "share_of_donors_with_worse_ratio": 0.395
+  },
+  "main": {
+    "rmspe_fit": 0.0192,
+    "rmspe_post": 0.0984,
+    "ratio": 5.12,
+    "p_value": 0.205,
+    "n_placebos": 43,
+    "gap_by_year": {
+      "2022": 0.002,
+      "2023": -0.0241,
+      "2024": -0.0896,
+      "2025": -0.1298,
+      "2026": -0.1625
+    },
+    "weights": {
+      "Home Health Care Services": 0.677,
+      "Warehousing and Storage": 0.216,
+      "Pipeline Transportation": 0.041,
+      "Motor Vehicles and Parts": 0.036,
+      "Support Activities for Mining": 0.03
+    },
+    "balance": {
+      "dv_rating_beta": {
+        "treated": 0.667,
+        "synthetic": 0.238
+      },
+      "human_rating_beta": {
+        "treated": 0.505,
+        "synthetic": 0.239
+      },
+      "rate_sensitivity": {
+        "treated": -0.029,
+        "synthetic": 0.015
+      },
+      "cyclicality": {
+        "treated": 1.43,
+        "synthetic": 0.415
+      }
+    }
+  },
+  "robust_pandemic_included": {
+    "rmspe_fit": 0.0192,
+    "rmspe_post": 0.0905,
+    "ratio": 4.7,
+    "p_value": 0.227,
+    "n_placebos": 43,
+    "gap_by_year": {
+      "2022": 0.0127,
+      "2023": -0.0143,
+      "2024": -0.0791,
+      "2025": -0.1194,
+      "2026": -0.1519
+    },
+    "weights": {
+      "Home Health Care Services": 0.671,
+      "Warehousing and Storage": 0.207,
+      "Pipeline Transportation": 0.049,
+      "Support Activities for Mining": 0.037,
+      "Motor Vehicles and Parts": 0.036
+    },
+    "balance": {
+      "dv_rating_beta": {
+        "treated": 0.667,
+        "synthetic": 0.239
+      },
+      "human_rating_beta": {
+        "treated": 0.505,
+        "synthetic": 0.24
+      },
+      "rate_sensitivity": {
+        "treated": -0.029,
+        "synthetic": 0.015
+      },
+      "cyclicality": {
+        "treated": 1.43,
+        "synthetic": 0.412
+      }
+    }
+  },
+  "dotcom": {
+    "rmspe_fit": 0.2126,
+    "rmspe_post": 0.3382,
+    "ratio": 1.59,
+    "p_value": 0.909,
+    "n_placebos": 43,
+    "gap_by_year": {
+      "2001": 0.4464,
+      "2002": 0.3019,
+      "2003": 0.2238
+    },
+    "weights": {
+      "Home Health Care Services": 0.558,
+      "Specialty Trade Contractors": 0.442
+    },
+    "balance": {
+      "dv_rating_beta": {
+        "treated": 0.667,
+        "synthetic": 0.223
+      },
+      "human_rating_beta": {
+        "treated": 0.505,
+        "synthetic": 0.215
+      },
+      "rate_sensitivity": {
+        "treated": -0.029,
+        "synthetic": -0.01
+      },
+      "cyclicality": {
+        "treated": 1.43,
+        "synthetic": 0.986
+      }
+    }
+  },
+  "leave_one_out": {
+    "without Warehousing and Storage": {
+      "rmspe_fit": 0.0273,
+      "gap_by_year": {
+        "2022": 0.0556,
+        "2023": 0.0208,
+        "2024": -0.0525,
+        "2025": -0.0992,
+        "2026": -0.1406
+      },
+      "top_weights": {
+        "Home Health Care Services": 0.836,
+        "Couriers and Messengers": 0.16,
+        "Beverage, Tobacco, and Leather and Allied Product Manufacturing": 0.005
+      }
+    },
+    "without Home Health Care Services": {
+      "rmspe_fit": 0.0462,
+      "gap_by_year": {
+        "2022": -0.0855,
+        "2023": -0.085,
+        "2024": -0.0997,
+        "2025": -0.119,
+        "2026": -0.1211
+      },
+      "top_weights": {
+        "Warehousing and Storage": 0.563,
+        "Support Activities for Mining": 0.247,
+        "Pipeline Transportation": 0.189
+      }
+    }
+  }
+}

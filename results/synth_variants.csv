@@ -1,0 +1,6 @@
+variant,n_donors,ridge,fit_error,holdout_error_2018_19,effective_donors,max_weight,top_donor,cyclicality_tech_vs_synth,gap_2022,gap_2024,gap_2026,p_value,gap_2022_without_top_donor,gap_2026_without_top_donor
+A. baseline,43,0.0,0.0192,0.0486,2.0,0.68,Home Health Care Services,1.43 vs 0.42,0.002,-0.09,-0.162,0.2,-0.086,-0.121
+B. ridge,43,0.3,0.0243,0.0149,3.3,0.42,Home Health Care Services,1.43 vs 0.53,-0.009,-0.075,-0.132,0.27,-0.05,-0.094
+C. growth (yoy),43,0.0,0.014,0.0226,6.7,0.21,Nonresidential Building Construction,1.43 vs 0.79,-0.006,-0.131,-0.244,0.09,-0.004,-0.221
+D. wider pool (<75th pct),67,0.0,0.0175,0.0336,3.3,0.41,Home Health Care Services,1.43 vs 0.34,-0.003,-0.085,-0.15,0.29,0.027,-0.13
+E. wider pool + ridge,67,0.3,0.0207,0.0062,4.3,0.31,Home Health Care Services,1.43 vs 0.44,0.002,-0.072,-0.13,0.29,-0.014,-0.105

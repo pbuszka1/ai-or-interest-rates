@@ -1,0 +1,23 @@
+
+ces: 43 units, 43 clusters, fake-treated clusters per draw 21
+{'design': 'ces', 'size': 0.0, 'planted_avg_effect': -0.0, 'mean_estimate': -0.0036, 'bias': -0.0036, 'null_sd': 0.0173, 'power': 0.04}
+{'design': 'ces', 'size': 0.025, 'planted_avg_effect': -0.0197, 'mean_estimate': -0.0233, 'bias': -0.0036, 'null_sd': 0.0173, 'power': 0.16, 'timing_correct_2023': 0.58, 'timing_too_early': 0.28, 'timing_never': 0.09}
+{'design': 'ces', 'size': 0.05, 'planted_avg_effect': -0.0395, 'mean_estimate': -0.043, 'bias': -0.0036, 'null_sd': 0.0173, 'power': 0.69, 'timing_correct_2023': 0.79, 'timing_too_early': 0.14, 'timing_never': 0.03}
+{'design': 'ces', 'size': 0.1, 'planted_avg_effect': -0.0789, 'mean_estimate': -0.0825, 'bias': -0.0036, 'null_sd': 0.0173, 'power': 1.0, 'timing_correct_2023': 0.98, 'timing_too_early': 0.02, 'timing_never': 0.0}
+{'design': 'ces', 'size': 0.15, 'planted_avg_effect': -0.1184, 'mean_estimate': -0.122, 'bias': -0.0036, 'null_sd': 0.0173, 'power': 1.0, 'timing_correct_2023': 1.0, 'timing_too_early': 0.0, 'timing_never': 0.0}
+
+qwi: 43 units, 11 clusters, fake-treated clusters per draw 5
+{'design': 'qwi', 'size': 0.0, 'planted_avg_effect': -0.0, 'mean_estimate': 0.0039, 'bias': 0.0039, 'null_sd': 0.0727, 'power': 0.01}
+{'design': 'qwi', 'size': 0.025, 'planted_avg_effect': -0.0188, 'mean_estimate': -0.0148, 'bias': 0.0039, 'null_sd': 0.0727, 'power': 0.06, 'timing_correct_2023': 0.1, 'timing_too_early': 0.42, 'timing_never': 0.44}
+{'design': 'qwi', 'size': 0.05, 'planted_avg_effect': -0.0375, 'mean_estimate': -0.0336, 'bias': 0.0039, 'null_sd': 0.0727, 'power': 0.09, 'timing_correct_2023': 0.23, 'timing_too_early': 0.35, 'timing_never': 0.4}
+{'design': 'qwi', 'size': 0.1, 'planted_avg_effect': -0.075, 'mean_estimate': -0.0711, 'bias': 0.0039, 'null_sd': 0.0727, 'power': 0.17, 'timing_correct_2023': 0.58, 'timing_too_early': 0.2, 'timing_never': 0.21}
+{'design': 'qwi', 'size': 0.15, 'planted_avg_effect': -0.1125, 'mean_estimate': -0.1086, 'bias': 0.0039, 'null_sd': 0.0727, 'power': 0.37, 'timing_correct_2023': 0.75, 'timing_too_early': 0.11, 'timing_never': 0.13}
+
+cps: 26 units, 26 clusters, fake-treated clusters per draw 13
+{'design': 'cps', 'size': 0.0, 'planted_avg_effect': -0.0, 'mean_estimate': 0.0178, 'bias': 0.0178, 'null_sd': 0.0637, 'power': 0.01}
+{'design': 'cps', 'size': 0.025, 'planted_avg_effect': -0.0197, 'mean_estimate': -0.0019, 'bias': 0.0178, 'null_sd': 0.0637, 'power': 0.03, 'timing_correct_2023': 0.16, 'timing_too_early': 0.39, 'timing_never': 0.31}
+{'design': 'cps', 'size': 0.05, 'planted_avg_effect': -0.0395, 'mean_estimate': -0.0216, 'bias': 0.0178, 'null_sd': 0.0637, 'power': 0.11, 'timing_correct_2023': 0.27, 'timing_too_early': 0.28, 'timing_never': 0.28}
+{'design': 'cps', 'size': 0.1, 'planted_avg_effect': -0.0789, 'mean_estimate': -0.0611, 'bias': 0.0178, 'null_sd': 0.0637, 'power': 0.26, 'timing_correct_2023': 0.47, 'timing_too_early': 0.18, 'timing_never': 0.14}
+{'design': 'cps', 'size': 0.15, 'planted_avg_effect': -0.1184, 'mean_estimate': -0.1006, 'bias': 0.0178, 'null_sd': 0.0637, 'power': 0.42, 'timing_correct_2023': 0.69, 'timing_too_early': 0.07, 'timing_never': 0.09}
+
+minimum detectable effect (80% power): {'ces': 0.1, 'cps': None, 'qwi': None}

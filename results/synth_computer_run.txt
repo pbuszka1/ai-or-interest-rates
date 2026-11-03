@@ -1,0 +1,8 @@
+donor pool: 36 groups
+hold-out: fit RMSPE 0.0484, 2018-21 RMSPE 0.2519 (ratio 5.21)
+main: fit RMSPE 0.0736, post RMSPE 0.1117, ratio 1.52, permutation p = 0.57 (36 placebos)
+main gap by year (log points): {2022: 0.117, 2023: 0.0964, 2024: 0.0828, 2025: 0.1227, 2026: 0.0935}
+weights: {'29-20': 0.494, '39-20': 0.329, '53-70': 0.174}
+balance: {"dv_rating_beta": {"computer": 0.776, "synthetic": 0.242}, "human_rating_beta": {"computer": 0.546, "synthetic": 0.201}, "cyclicality": {"computer": 0.375, "synthetic": 1.768}, "rate_sensitivity_raw": {"computer": -0.204, "synthetic": 0.144}, "boom_2022": {"computer": -0.039, "synthetic": -0.02}}
+dot-com: fit RMSPE 0.0720, post RMSPE 0.1032, ratio 1.43, p = 0.76; gap by year {2001: 0.0692, 2002: 0.1067}
+dot-com weights: {'49-20': 0.853, '47-40': 0.098, '47-22': 0.049}

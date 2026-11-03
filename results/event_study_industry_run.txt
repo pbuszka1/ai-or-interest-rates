@@ -1,0 +1,11 @@
+ramp injection test (power first)...
+{'size_at_2026Q3': 0.0, 'planted_delta': -0.0, 'mean_estimate': -0.0001, 'bias': -0.0001, 'null_sd': 0.0188, 'power_empirical_null': 0.035, 'power_cluster_test': 0.04}
+{'size_at_2026Q3': 0.025, 'planted_delta': -0.0167, 'mean_estimate': -0.0167, 'bias': -0.0001, 'null_sd': 0.0188, 'power_empirical_null': 0.145, 'power_cluster_test': 0.115}
+{'size_at_2026Q3': 0.05, 'planted_delta': -0.0333, 'mean_estimate': -0.0334, 'bias': -0.0001, 'null_sd': 0.0188, 'power_empirical_null': 0.45, 'power_cluster_test': 0.395}
+{'size_at_2026Q3': 0.1, 'planted_delta': -0.0667, 'mean_estimate': -0.0667, 'bias': -0.0001, 'null_sd': 0.0188, 'power_empirical_null': 0.94, 'power_cluster_test': 0.93}
+{'size_at_2026Q3': 0.15, 'planted_delta': -0.1, 'mean_estimate': -0.1001, 'bias': -0.0001, 'null_sd': 0.0188, 'power_empirical_null': 1.0, 'power_cluster_test': 0.995}
+primary: 94 industries, Delta (quartile) {'est': -0.049569, 'se': 0.020325, 'ci95': [-0.089931, -0.009206], 'p': 0.016637}, P(<0) 0.992631, skeptical 0.970772, pre-trend p 0.072788
+boom_controlled: 94 industries, Delta (quartile) {'est': -0.029179, 'se': 0.020898, 'ci95': [-0.070678, 0.012321], 'p': 0.165967}, P(<0) 0.918678, skeptical 0.857972, pre-trend p 0.277082
+dotcom: 99 industries, Delta (quartile) {'est': -0.038726, 'se': 0.013856, 'ci95': [-0.066223, -0.011229], 'p': 0.006248}, P(<0) 0.997404, skeptical 0.992747, pre-trend p 0.000425
+fake_2017: 95 industries, Delta (quartile) {'est': -0.001265, 'se': 0.01053, 'ci95': [-0.022172, 0.019642], 'p': 0.90464}, P(<0) 0.547808, skeptical 0.544076, pre-trend p 0.573535
+wrote results/event_study_industry.json

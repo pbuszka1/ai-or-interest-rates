@@ -1,0 +1,13 @@
+ramp injection test (power first)...
+{'size_at_end': 0.0, 'planted_delta': -0.0, 'mean_estimate': -0.0019, 'bias': -0.0019, 'null_sd': 0.0217, 'power_empirical_null': 0.06, 'power_cluster_test': 0.065}
+{'size_at_end': 0.025, 'planted_delta': -0.0164, 'mean_estimate': -0.0183, 'bias': -0.0019, 'null_sd': 0.0217, 'power_empirical_null': 0.11, 'power_cluster_test': 0.135}
+{'size_at_end': 0.05, 'planted_delta': -0.0328, 'mean_estimate': -0.0347, 'bias': -0.0019, 'null_sd': 0.0217, 'power_empirical_null': 0.29, 'power_cluster_test': 0.35}
+{'size_at_end': 0.1, 'planted_delta': -0.0656, 'mean_estimate': -0.0674, 'bias': -0.0019, 'null_sd': 0.0217, 'power_empirical_null': 0.875, 'power_cluster_test': 0.9}
+{'size_at_end': 0.15, 'planted_delta': -0.0983, 'mean_estimate': -0.1002, 'bias': -0.0019, 'null_sd': 0.0217, 'power_empirical_null': 0.99, 'power_cluster_test': 0.99}
+primary: 576 cells, Delta (quartile) {'est': 0.002522, 'se': 0.029658, 'ci95': [-0.056272, 0.061315], 'p': 0.932397}, P(<0) 0.466119, pre-trend p 0.230162
+fake_2016: 576 cells, Delta (quartile) {'est': 0.001099, 'se': 0.018916, 'ci95': [-0.0364, 0.038598], 'p': 0.953785}, P(<0) 0.476839, pre-trend p 0.203196
+drop_computer_occupations: 565 cells, Delta (quartile) {'est': -0.00389, 'se': 0.031087, 'ci95': [-0.065524, 0.057744], 'p': 0.900664}, P(<0) 0.549787, pre-trend p 0.301974
+drop_info_professional: 524 cells, Delta (quartile) {'est': -0.000201, 'se': 0.031203, 'ci95': [-0.062064, 0.061662], 'p': 0.994876}, P(<0) 0.502568, pre-trend p 0.213621
+own_trend_removed: 576 cells, Delta (quartile) {'est': -0.019144, 'se': 0.030743, 'ci95': [-0.080087, 0.0418], 'p': 0.534804}, P(<0) 0.73326, pre-trend p 0.103286
+age: 651 cells, Delta young-old {'est': -0.063005, 'se': 0.046402, 'ci95': [-0.155054, 0.029044], 'p': 0.177549}, P(<0) 0.912738, pre-trend p 0.178586
+wrote results/event_study_occupation.json

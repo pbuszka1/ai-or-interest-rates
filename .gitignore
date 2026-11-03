@@ -1,0 +1,11 @@
+data/raw/
+data/interim/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db

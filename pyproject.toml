@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+# Style only. The analysis scripts are left as they were when the results were produced.
+ignore = ["E501", "E731"]

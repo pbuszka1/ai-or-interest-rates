@@ -1,0 +1,38 @@
+{'controls': 43, 'high': 20, 'middle': 15, 'computer systems design': 1}
+high-exposure industries: ['Computer and Peripheral Equipment Manufacturing', 'Merchant Wholesalers, Durable Goods', 'Wholesale Trade Agents and Brokers', 'Publishing Industries', 'Motion Picture and Sound Recording Industries', 'Broadcasting and Content Providers', 'Telecommunications', 'Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services', 'Web Search Portals, Libraries, Archives, and Other Information Services', 'Monetary Authorities-Central Bank', 'Commercial Banking', 'Securities, Commodity Contracts, Funds, Trusts, and Other Financial Vehicles, Investments, and Related Activities', 'Insurance Carriers and Related Activities', 'Legal Services', 'Accounting, Tax Preparation, Bookkeeping, and Payroll Services', 'Architectural, Engineering, and Related Services', 'Computer Systems Design and Related Services', 'Management, Scientific, and Technical Consulting Services', 'Management of Companies and Enterprises', 'Business Support Services']
+
+2022_high: tau -0.0388  se 0.0110  ci [-0.060431, -0.017181]  (unweighted DiD +0.0682; pre-path rms 0.018381; effective controls 31.2, max weight 0.05)
+   by year: {2022: 0.004794, 2023: -0.016865, 2024: -0.046259, 2025: -0.066147, 2026: -0.079802}
+   balance: {'rate_sensitivity': {'treated': -0.002, 'weighted_controls': 0.019}, 'cyclicality': {'treated': 0.935, 'weighted_controls': 0.832}}
+
+2022_middle: tau -0.0394  se 0.0121  ci [-0.063151, -0.015747]  (unweighted DiD -0.0229; pre-path rms 0.008398; effective controls 30.9, max weight 0.05)
+   by year: {2022: -0.011572, 2023: -0.03712, 2024: -0.0484, 2025: -0.05226, 2026: -0.050709}
+   balance: {'rate_sensitivity': {'treated': 0.006, 'weighted_controls': 0.015}, 'cyclicality': {'treated': 0.64, 'weighted_controls': 0.767}}
+
+2022_computer_systems_design: tau -0.0611  se 0.0325  ci [-0.124752, 0.002586]  (unweighted DiD +0.3653; pre-path rms 0.026004; effective controls 3.0, max weight 0.48)
+   by year: {2022: 0.001967, 2023: -0.017514, 2024: -0.069925, 2025: -0.106235, 2026: -0.131252}
+   balance: {'rate_sensitivity': {'treated': -0.029, 'weighted_controls': 0.027}, 'cyclicality': {'treated': 1.43, 'weighted_controls': 0.481}}
+
+2022_high_pandemic_kept: tau -0.0365  se 0.0111  ci [-0.058267, -0.014723]  (unweighted DiD +0.0609; pre-path rms 0.01423; effective controls 32.3, max weight 0.05)
+   by year: {2022: 0.005071, 2023: -0.015449, 2024: -0.043078, 2025: -0.062479, 2026: -0.076559}
+   balance: {'rate_sensitivity': {'treated': -0.002, 'weighted_controls': 0.017}, 'cyclicality': {'treated': 0.935, 'weighted_controls': 0.895}}
+
+2022_high_pre_ends_2019: tau +0.0071  se 0.0185  ci [-0.029272, 0.0434]  (unweighted DiD +0.0711; pre-path rms 0.006142; effective controls 30.4, max weight 0.05)
+   by year: {2022: 0.057987, 2023: 0.030866, 2024: -0.002255, 2025: -0.024082, 2026: -0.038617}
+   balance: {'rate_sensitivity': {'treated': -0.002, 'weighted_controls': 0.018}, 'cyclicality': {'treated': 0.935, 'weighted_controls': 0.789}}
+
+2022_middle_pre_ends_2019: tau -0.0102  se 0.0193  ci [-0.048099, 0.027607]  (unweighted DiD -0.0227; pre-path rms 0.011251; effective controls 27.9, max weight 0.06)
+   by year: {2022: 0.022672, 2023: -0.006213, 2024: -0.020456, 2025: -0.025917, 2026: -0.025004}
+   balance: {'rate_sensitivity': {'treated': 0.006, 'weighted_controls': 0.013}, 'cyclicality': {'treated': 0.64, 'weighted_controls': 0.725}}
+
+dotcom_high: tau -0.0321  se 0.0195  ci [-0.070267, 0.006091]  (unweighted DiD +0.1634; pre-path rms 0.026785; effective controls 13.6, max weight 0.14)
+   by year: {2001: -0.005332, 2002: -0.03, 2003: -0.060932}
+   balance: {'rate_sensitivity': {'treated': -0.002, 'weighted_controls': 0.002}, 'cyclicality': {'treated': 0.935, 'weighted_controls': 1.235}}
+
+dotcom_computer_systems_design: tau -0.1374  se 0.0804  ci [-0.295028, 0.020206]  (unweighted DiD +0.5931; pre-path rms 0.508095; effective controls 2.0, max weight 0.56)
+   by year: {2001: -0.015193, 2002: -0.159519, 2003: -0.237521}
+   balance: {'rate_sensitivity': {'treated': -0.029, 'weighted_controls': -0.01}, 'cyclicality': {'treated': 1.43, 'weighted_controls': 0.989}}
+
+placebo_2016_high: tau +0.0070  se 0.0140  ci [-0.020488, 0.034568]  (unweighted DiD +0.0543; pre-path rms 0.005445; effective controls 30.9, max weight 0.05)
+   by year: {2016: 0.015292, 2017: 0.010095, 2018: 0.002573, 2019: 0.000198}
+   balance: {'rate_sensitivity': {'treated': -0.002, 'weighted_controls': 0.019}, 'cyclicality': {'treated': 0.935, 'weighted_controls': 0.79}}

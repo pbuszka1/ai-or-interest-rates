@@ -1,0 +1,217 @@
+{
+  "unmatched_occupations": {
+    "share_unmatched": 0.018330391496419907,
+    "top10": [
+      {
+        "census2018": 2014,
+        "title": "Social workers, all other",
+        "share": 0.0045076217502355576
+      },
+      {
+        "census2018": 5940,
+        "title": "Office and administrative support workers, all other",
+        "share": 0.004060810431838036
+      },
+      {
+        "census2018": 4965,
+        "title": "Sales and related workers, all other",
+        "share": 0.002393376547843218
+      },
+      {
+        "census2018": 2006,
+        "title": "Counselors, all other",
+        "share": 0.0015787625452503562
+      },
+      {
+        "census2018": 9150,
+        "title": "Motor vehicle operators, all other",
+        "share": 0.0010005880612879992
+      },
+      {
+        "census2018": 5165,
+        "title": "Financial clerks, all other",
+        "share": 0.0009489044896326959
+      },
+      {
+        "census2018": 7855,
+        "title": "Food processing workers, all other",
+        "share": 0.0008818113128654659
+      },
+      {
+        "census2018": 4655,
+        "title": "Personal care and service workers, all other",
+        "share": 0.0007740711444057524
+      },
+      {
+        "census2018": 5420,
+        "title": "Information and record clerks, all other",
+        "share": 0.0006898028077557683
+      },
+      {
+        "census2018": 2180,
+        "title": "Legal support workers, all other",
+        "share": 0.000503373914398253
+      }
+    ]
+  },
+  "soc_collapse": {
+    "code": "def soc_scores() -> pd.DataFrame:\n    e = pd.read_csv(RAW / \"exposure\" / \"eloundou_occ_level_2026-10-21.csv\")\n    e[\"soc\"] = e[\"O*NET-SOC Code\"].str[:7]\n    return e.groupby(\"soc\")[SCORES].mean().reset_index()",
+    "uses_drop_duplicates": false
+  },
+  "partial_years": {
+    "divisor_by_year": {
+      "2011": 12,
+      "2012": 12,
+      "2013": 12,
+      "2014": 12,
+      "2015": 12,
+      "2016": 12,
+      "2017": 12,
+      "2018": 12,
+      "2019": 12,
+      "2021": 6,
+      "2022": 12,
+      "2023": 12,
+      "2024": 12,
+      "2025": 11,
+      "2026": 9
+    },
+    "months_present": {
+      "2019": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "2021": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "2025": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "2026": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "cells_failing_30_by_year": {
+      "2011": 538,
+      "2012": 543,
+      "2013": 579,
+      "2014": 561,
+      "2015": 578,
+      "2016": 572,
+      "2017": 570,
+      "2018": 574,
+      "2019": 562,
+      "2021": 659,
+      "2022": 607,
+      "2023": 592,
+      "2024": 553,
+      "2025": 598,
+      "2026": 595
+    },
+    "cells_kept": 576
+  },
+  "triple_difference": {
+    "young_cells": 167,
+    "older_cells": 484,
+    "young_cells_with_older_cell": 167,
+    "weights": "each cell-by-age series is weighted by its own 2015-19 employment in that age band",
+    "weight_share_young": 0.15149757266044617,
+    "as_written": {
+      "est": -0.06300512081648332,
+      "se": 0.04640195150122025,
+      "ci95": [
+        -0.15505411060709634,
+        0.029043868974129708
+      ],
+      "p": 0.17754919900481225
+    },
+    "cell_by_year_effects_difference_model": {
+      "weights_young_cell": {
+        "est": -0.00896438784161225,
+        "se": 0.04622146165140549,
+        "ci95": [
+          -0.10100307651624907,
+          0.08307430083302458
+        ],
+        "p": 0.8467302542180482
+      },
+      "weights_equal": {
+        "est": -0.04287317921329401,
+        "se": 0.05514755550346162,
+        "ci95": [
+          -0.15268599150448683,
+          0.06693963307789882
+        ],
+        "p": 0.43928914037797284
+      }
+    }
+  },
+  "log_conversion": {
+    "files_using_exp": {
+      "verification_checks.py": [
+        "if re.search(r\"np\\.exp\\(|math\\.exp\\(|expm1\", t):",
+        "hits[f.name] = [ln.strip()[:100] for ln in t.splitlines() if re.search(r\"np\\.exp\\(|math\\.exp\\(|expm1"
+      ]
+    }
+  },
+  "quartile_gaps": {
+    "test_a": 2.522568,
+    "test_b": 2.553658,
+    "triple_difference": 2.534231283977693,
+    "definition": "def quartile_gap(x: pd.Series) -> float:\n    \"\"\"Average exposure of the top quarter minus the bottom quarter: turns 'per SD' into\n    'most vs least exposed'.\"\"\"\n    return float(x[x >= x.quantile(0.75)].mean() - x[x <= x.quantile(0.25)].mean())",
+    "standard_normal_value": 2.5422
+  },
+  "sdid_export": {
+    "2022_high_pre_ends_2019": {
+      "T_pre": 68,
+      "periods": 87,
+      "treated": 20,
+      "controls": 43
+    },
+    "2022_high": {
+      "T_pre": 70,
+      "periods": 89,
+      "treated": 20,
+      "controls": 43
+    }
+  }
+}
