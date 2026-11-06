@@ -1,6 +1,6 @@
 # Key Choices and Why
 
-Every choice that shaped the results, on one page: what was chosen, why, and what we could have
+Every choice that shaped the results, on one page: what was chosen, why, and what I could have
 done instead. Useful for answering "why did you do it that way?"
 
 ## The question
@@ -30,7 +30,7 @@ done instead. Useful for answering "why did you do it that way?"
 | 11 | Push for a better fit, then pre-set a rule for choosing among variants | The first fit looked "pretty horrible"; a rule chosen before seeing results stops cherry-picking | Pick the variant with the nicest result |
 | 12 | Synthetic DiD for the pooled high-vs-low comparison | One treated unit can only detect huge effects (about 16–20%); pooling many units averages out noise | More single-unit synthetic controls |
 | 13 | Drop the pandemic quarters (2020-Q1 to 2021-Q2) | COVID hit in-person, low-exposure industries for reasons unrelated to AI or rates | Keep them (reported as robustness) |
-| 14 | 2019 as the baseline, not late 2021 | Time weights put 82% on 2021-Q4, the peak of the pandemic boom, which flipped the result | Let the method choose its baseline |
+| 14 | 2019 as the baseline, not late 2021 | Time weights put 81% on 2021-Q4, the peak of the pandemic boom, which flipped the result | Let the method choose its baseline |
 | 15 | Remove seasonality from QWI hires | Time weights locked onto one season; young hiring swings ±15% a year | Use the "seasonally adjusted" series as-is |
 | 16 | Exposure as a continuous dose in Round 2 | Uses every industry, and a smooth gradient is harder for a confounder to fake | High vs low groups |
 | 17 | Compare occupations *within the same industry* (Test B) | Absorbs everything that hits whole industries: rates, the boom, tax rules | Model each confounder |
@@ -39,22 +39,22 @@ done instead. Useful for answering "why did you do it that way?"
 
 | # | Decision | Why | Alternative not taken |
 |---|---|---|---|
-| 18 | Injection tests (plant a known effect, rerun) | A worry that we weren't catching the trends well enough; this measures what each design can detect | Trust the standard errors |
-| 20 | Pre-register Round 2 before running it | Round 1 made choices after seeing data; fixing them in advance prevents unconscious steering | Keep adjusting as we go |
-| 21 | Report Test A as "failed pre-trend check" at p = 0.078 | The rule said p > 0.10; arguing "close enough" after seeing the result is what pre-registration prevents | Call it close enough |
-| 22 | Report the probability the effect is below zero | Easier to read than a p-value; the caveat (it says the change is real, not what caused it) is reported with it | p-values only |
-| 23 | Three p-values for headlines (clustered, wild bootstrap, randomization) | They rest on different assumptions; agreement means the answer isn't an artifact of one | Clustered SEs only |
+| 18 | Injection tests (plant a known effect, rerun) | A worry that the designs weren't catching the trends well enough; this measures what each design can detect | Trust the standard errors |
+| 19 | Pre-register Round 2 before running it | Round 1 made choices after seeing data; fixing them in advance prevents unconscious steering | Keep adjusting along the way |
+| 20 | Report Test A as "failed pre-trend check" at p = 0.078 | The rule said p > 0.10; arguing "close enough" after seeing the result is what pre-registration prevents | Call it close enough |
+| 21 | Report the probability the effect is below zero | Easier to read than a p-value; the caveat (it says the change is real, not what caused it) is reported with it | p-values only |
+| 22 | Three p-values for headlines (clustered, wild bootstrap, randomization) | They rest on different assumptions; agreement means the answer isn't an artifact of one | Clustered SEs only |
 
 ## Scope
 
 | # | Decision | Why | Alternative not taken |
 |---|---|---|---|
-| 24 | Publish with three job datasets and three helpers; leave the remaining pre-registered tests (ACS, productivity, actual use, Section 174, earnings) as next steps | Enough for a clear finding and an honest open question; every extra source makes it harder to explain | Add six more sources first |
-| 25 | Measure **potential** AI exposure (what AI *could* do), and treat **actual use** as out of scope | Could-do and actually-used are different questions; measuring real adoption well is a project of its own. Findings are stated as "jobs where AI could do more of the work" | Add usage data (Anthropic Economic Index, Census BTOS) now |
+| 23 | Publish with three job datasets and three helpers; leave the remaining pre-registered tests (ACS, productivity, actual use, Section 174, earnings) as next steps | Enough for a clear finding and an honest open question; every extra source makes it harder to explain | Add six more sources first |
+| 24 | Measure **potential** AI exposure (what AI *could* do), and treat **actual use** as out of scope | Could-do and actually-used are different questions; measuring real adoption well is a project of its own. Findings are stated as "jobs where AI could do more of the work" | Add usage data (Anthropic Economic Index, Census BTOS) now |
 
 ## Changes after seeing results
 
-**2026-11-02: restored the pre-registered 2015–19 occupation mix for industry exposure.** Decision 21 reported Test A as failed
+**2026-11-02: restored the pre-registered 2015–19 occupation mix for industry exposure.** Decision 20 reported Test A as failed
 at p = 0.078 on a 2020–25 mix. That mix departed from the plan, so I replaced it. The registered mix passes at p = 0.107, which
 changes the verdict from 4 to 3. The alternative was to keep the earlier mix because its verdict was more cautious, but that
 would choose a specification for its answer. Both are reported.
@@ -65,5 +65,5 @@ Census industries, and catch-all "not specified" rows were averaged in alongside
 because of where the verdict landed, and I report the estimates ahead of the label: across six versions of the industry
 score the pre-trend p runs from 0.067 to 0.107 while the estimate stays between −3.7% and −5.0%.
 
-Decisions 14, 15, the exploratory trend-adjusted estimate, and #22 were made after seeing some
+Decisions 13, 14, 15, the exploratory trend-adjusted estimate, and #21 were made after seeing some
 results. Each is logged with its reason, and the original version is reported alongside.

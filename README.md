@@ -66,7 +66,7 @@ slide runs through the pandemic boom. The thing to watch is young workers.**
 |---|---|---|---|
 | **Inside the same industry**, do AI-exposed jobs lose ground? (Test B) | **+0.3%**, 95% CI −5.6% to +6.1% | Yes | A bounded null. Its interval rules out average shifts bigger than about 6%. |
 | **Across industries**, do more exposed ones do worse? (Test A) | −5.0%, CI −9.0% to −0.9% | No (pre-trend p = 0.073, bar is 0.10) | Negative, and it would clear the correction for two main tests, but a failed pre-trend means the rules don't interpret it. About 40% runs through the pandemic boom. Weighted by employment: −5.5% (CI −9.0% to −2.1%). |
-| **Young workers' hires** in exposed industries, ages 22–24 (QWI) | −9.3%, CI −18.3% to −0.2% | Yes | Real, but it started in 2020–21, before ChatGPT. |
+| **Young workers' hires** in exposed industries, ages 22–24 (QWI; above vs below the median on both exposure ratings) | −9.3%, CI −18.3% to −0.2% | Yes | Real, but it started in 2020–21, before ChatGPT. |
 | **Young workers' employment**, same occupation and industry (CPS) | −6.3%, CI −15.5% to +2.9%, p = 0.18, 91% probability below zero | Yes | Same direction as the Stanford study, but comparing young and older workers only within the same cells gives −0.9%. One partial year of noisy data. Not conclusive. |
 
 **Overall verdict: "can't tell yet"** (the pre-registered rule, Verdict 4). Test B passes and shows no
@@ -331,7 +331,7 @@ the dot-com comparison and detectable effect size for every row, is
 
 ### 8.1 Across industries: a negative estimate from a design that fails its pre-trend check
 
-- **Synthetic DiD, 20 high vs 43 low-exposure industries:** +0.7% (CI −2.9% to +4.3%). Exposed
+- **Synthetic DiD, 20 high vs 43 low-exposure industries** (top quarter vs below the median on both ratings): +0.7% (CI −2.9% to +4.3%). Exposed
   industries were about 5.8% above normal by 2022 (the pandemic boom) and drifted back to about
   −3.9% by 2026. With a late-2021 baseline the estimate is −3.9% and significant, which is the
   boom unwinding.
@@ -364,7 +364,8 @@ endpoint between −8.6% and +9.4%. Adding a college-share control, because expo
 
 ### 8.3 Who: young workers are the open question
 
-- **Hires (QWI):** hires of 22–24 year olds minus 35–44 year olds in exposed industries:
+- **Hires (QWI):** hires of 22–24 year olds minus 35–44 year olds, in industries above vs below the median on both
+  exposure ratings:
   **−9.3% (CI −18.3% to −0.2%)**. Real, but it opened in 2020–21 and has been flat since
   2022. It predates ChatGPT.
 - **Employment (CPS), same occupation and industry:** young (22–27) vs older (35–65):
@@ -506,7 +507,7 @@ then the tests (`--download` also fetches CES, FRED and QWI; `--from <step>` res
 
 ### Computational requirements
 
-- Python 3.11 with the pinned packages in `requirements.txt`. The independent re-estimates run in their own
+- Python 3.11 (CI also runs 3.12) with the pinned packages in `requirements.txt`. The independent re-estimates run in their own
   environments because of version conflicts: [`requirements-pyfixest.txt`](requirements-pyfixest.txt) (pyfixest and
   wildboottest, with pandas 3.1) and [`requirements-synthdid.txt`](requirements-synthdid.txt) (synthdid, which needs
   numpy 1.23 and pandas 1.5). They aren't part of `run_all.py`.
@@ -616,4 +617,7 @@ GitHub's "Cite this repository" button uses [CITATION.cff](CITATION.cff).
 - [PwC on Section 174A](https://www.pwc.com/us/en/tax-services/publications/insights/assets/pwc-optionality-restored-to-tax-treatment-of-us-research-activities.pdf) (tax commentary; check the statute and Rev. Proc. 2025-28 before relying on details)
 - Arkhangelsky, Athey, Hirshberg, Imbens and Wager, "Synthetic Difference-in-Differences," *American Economic Review* (2021)
 - Abadie, Diamond and Hainmueller, "Synthetic Control Methods for Comparative Case Studies," *JASA* (2010)
+- Bauer and Swanson, "A Reassessment of Monetary Policy Surprises and High-Frequency Identification," *NBER Macroeconomics Annual* (2023)
+- Zens, Böck and Zörner, "The Heterogeneous Impact of Monetary Policy on the US Labor Market," *Journal of Economic Dynamics and Control* (2020)
+- Callaway, Goodman-Bacon and Sant'Anna, "Difference-in-Differences with a Continuous Treatment," NBER Working Paper 32117 (2024)
 - Rambachan and Roth, "A More Credible Approach to Parallel Trends," *Review of Economic Studies* (2023)

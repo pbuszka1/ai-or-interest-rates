@@ -122,3 +122,22 @@ re-executed again for this audit.
 | Python version | 3.11 locally, 3.12 in CI; the README now says either works | PASS |
 | Top of the README | Links the general-reader paper and the technical version, explains `python -m pytest tests` (no download needed) and `python scripts/run_all.py`, and links the IPUMS extract recipe | PASS (quick start added) |
 | Tests, lint and privacy check | 241 tests pass; `ruff check scripts tests` passes; the privacy check passes | PASS |
+
+## Follow-up check, 2026-11-06
+
+A second full read before release found text the first pass missed. None of it changes a result.
+
+- `notebooks/README.md` and the explanation cells of notebooks 03 and 07 still had pre-correction numbers (p = 0.26 for
+  computer systems design, an 11% hiring squeeze, 21 exposed industries, and a 2.49 SD gap with −3.7% in notebook 07's
+  worked example). They now match the saved results. Notebook 07 was re-executed so its pre-trend p-values print to two
+  significant figures; before, the dot-com placebo's 0.0004 displayed as 0.0.
+- `docs/LIMITATIONS.md` had citation wording broken by a style conversion, for example "the simplest case of (Rambachan and
+  Roth 2023)". It was rewritten, and Callaway, Goodman-Bacon and Sant'Anna was added to its references.
+- `docs/DECISIONS.md` said 82% where the result is 81%, and its numbering skipped the row removed from the public copy.
+- The general-reader paper's Eloundou et al. citation sat where it seemed to cover the 0.89 rating correlation, which is
+  this project's own calculation (the same issue as the 2026-11-02 correction). The citation now sits on the 65.6% figure.
+  Both papers and the README now say that the QWI comparison splits industries at the median rather than by quartile.
+- `docs/VERIFICATION_AUDIT.md` gave an old count of paper-number checks (197; it is 213).
+
+After these fixes, 241 tests pass, all 213 paper-number checks pass, the privacy check passes, and every relative link
+resolves except the expected one in the pre-registration.

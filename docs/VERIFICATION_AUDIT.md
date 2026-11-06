@@ -180,7 +180,7 @@ that feeds a reported result. It runs end to end with no errors.
 
 ## 6. Full rerun
 
-On 2026-11-03 I cloned the published repository into an empty folder, built a new environment from
+On 2026-11-03 I cloned the GitHub repository into an empty folder, built a new environment from
 `requirements.txt`, copied in the raw data, and ran `scripts/load_cps.py` and `scripts/run_all.py` (about 90 minutes).
 Every step succeeded and all tests passed. `scripts/compare_rerun.py` then compared every number in the 15 result files the
 run regenerates with the saved ones: all 6,861 match to within 10⁻⁹. The one processed file that differs,
@@ -196,7 +196,7 @@ run regenerates with the saved ones: all 6,861 match to within 10⁻⁹. The one
 
 ```
 python scripts/verification_checks.py          # pipeline checks, SDiD export
-python scripts/verify_paper_numbers.py         # 197 paper numbers
+python scripts/verify_paper_numbers.py         # 213 checks of the paper's numbers
 python -m pytest tests                         # includes the paper-number checks
 # in an environment with pyfixest, wildboottest and synthdid:
 python scripts/reestimate_pyfixest.py
