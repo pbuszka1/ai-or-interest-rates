@@ -592,7 +592,7 @@ leaves Test B at −0.5% but widens its interval to −8.4% to +7.4%, and moves 
 | [Census QWI](https://lehd.ces.census.gov/data/) | Hires by age and industry | US government, public domain |
 | [FRED](https://fred.stlouisfed.org/) | Rates, CPI, unemployment | Public; free API key |
 | Monetary policy surprises (Bauer and Swanson, [FRBSF](https://www.frbsf.org/)) | Each industry's sensitivity to rate surprises | Public |
-| [Eloundou et al. (2024)](https://arxiv.org/abs/2303.10130) | AI exposure scores | Public replication data |
+| [Eloundou et al. (2024)](https://arxiv.org/abs/2303.10130) | AI exposure scores | [MIT License](https://github.com/openai/GPTs-are-GPTs/blob/main/LICENSE), Copyright (c) 2024 OpenAI; the scores in `data/processed/exposure_occ2010.csv` and `occ_groups.csv` are derived from them |
 | Census occupation and industry crosswalks, O*NET | Linking job codes | Public |
 | [Indeed Hiring Lab](https://github.com/hiring-lab/job_postings_tracker) | Downloaded; not used in a reported result | CC BY 4.0, with credit to Indeed Hiring Lab |
 
