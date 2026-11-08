@@ -625,6 +625,7 @@ GitHub's "Cite this repository" button uses [CITATION.cff](CITATION.cff).
 - [GPTs are GPTs (Eloundou et al.)](https://arxiv.org/pdf/2303.10130)
 - [Yin, Vu and Persico, "How (un)Stable Are LLM Occupational Exposure Scores?" NBER w35110](https://www.nber.org/papers/w35110)
 - [Indeed Hiring Lab, Oct 2022 US labor market update](https://www.hiringlab.org/2022/10/27/october-2022-us-labor-market-update/)
+- Tax Cuts and Jobs Act, Pub. L. No. 115-97, § 13206 (2017), amending [26 U.S.C. § 174](https://www.law.cornell.edu/uscode/text/26/174); and Pub. L. No. 119-21, § 70302 (2025), adding [26 U.S.C. § 174A](https://www.law.cornell.edu/uscode/text/26/174A)
 - [PwC on Section 174A](https://www.pwc.com/us/en/tax-services/publications/insights/assets/pwc-optionality-restored-to-tax-treatment-of-us-research-activities.pdf) (tax commentary; check the statute and Rev. Proc. 2025-28 before relying on details)
 - Arkhangelsky, Athey, Hirshberg, Imbens and Wager, "Synthetic Difference-in-Differences," *American Economic Review* (2021)
 - Abadie, Diamond and Hainmueller, "Synthetic Control Methods for Comparative Case Studies," *JASA* (2010)
