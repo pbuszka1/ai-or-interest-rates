@@ -197,6 +197,14 @@ I started by checking whether someone had already asked this.
   effects, the relative decline only becomes significant in **2024**. The authors say the
   2022–23 declines are "likely (at least partly) due to some combination of other factors, not
   just AI."
+- **Others using public data.** The Budget Lab at Yale (Gimbel, Kinder, Kendall and Lee, Oct 2025)
+  tracks the CPS occupational mix and finds AI exposure shows no sign of being related to changes in
+  employment or unemployment. The Dallas Fed (Atkinson and Yamco, Jan 2026) uses the CPS and the
+  same exposure scores, and finds young workers' share of jobs in the most exposed occupations fell
+  after ChatGPT, mainly through fewer new hires. Frank et al. (2026), with unemployment-insurance and
+  LinkedIn data, find exposed jobs began deteriorating in early 2022, before ChatGPT. This project
+  differs mainly in design: pre-registered tests at the industry and occupation level, with explicit
+  controls for interest-rate sensitivity and the pandemic boom, and a dot-com placebo.
 - **The working hypothesis this suggests:** the 2022–23 drop is mostly macro (rates,
   over-hiring, tax), and an AI effect concentrated in early-career hiring in exposed
   occupations emerges from 2024. This project tests that rather than assuming either story.
@@ -611,6 +619,9 @@ GitHub's "Cite this repository" button uses [CITATION.cff](CITATION.cff).
 
 - [Canaries in the Coal Mine, Aug 2026 version](https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf)
 - [Canaries, Interest Rates and Timing (Feb 2026 note)](https://digitaleconomy.stanford.edu/news/canaries-interest-rates-and-timinga-more-on-recent-drivers-of-employment-changes-for-young-workers)
+- [Gimbel, Kinder, Kendall and Lee, "Evaluating the Impact of AI on the Labor Market: Current State of Affairs," Budget Lab at Yale (Oct 2025)](https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs)
+- [Atkinson and Yamco, "Young Workers' Employment Drops in Occupations with High AI Exposure," Dallas Fed (Jan 2026)](https://www.dallasfed.org/research/economics/2026/0106)
+- [Frank, Javadian Sabet, Simon, Bana and Yu, "AI-Exposed Jobs Deteriorated before ChatGPT," arXiv:2601.02554 (2026)](https://arxiv.org/abs/2601.02554)
 - [GPTs are GPTs (Eloundou et al.)](https://arxiv.org/pdf/2303.10130)
 - [Yin, Vu and Persico, "How (un)Stable Are LLM Occupational Exposure Scores?" NBER w35110](https://www.nber.org/papers/w35110)
 - [Indeed Hiring Lab, Oct 2022 US labor market update](https://www.hiringlab.org/2022/10/27/october-2022-us-labor-market-update/)
